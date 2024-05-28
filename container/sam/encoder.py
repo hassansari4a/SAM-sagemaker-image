@@ -11,7 +11,6 @@ import signal
 import sys
 import traceback
 import torch
-# import torch.neuron
 
 import boto3
 import numpy as np
@@ -46,11 +45,6 @@ class SamService(object):
 
     @classmethod
     def predict(cls, input_tensor):
-        """For the input, do the predictions and return them.
-
-        Args:
-            input (a pandas dataframe): The data on which to do the predictions. There will be
-                one prediction per row in the dataframe"""
         clf = cls.get_model()
 
         # Inference
