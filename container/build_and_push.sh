@@ -42,7 +42,7 @@ fi
 aws ecr get-login-password --region $region | docker login --username AWS --password-stdin $account.dkr.ecr.$region.amazonaws.com
 
 # Get the login command from ECR in order to pull down the SageMaker PyTorch image
-aws ecr get-login-password --region $region | docker login --username AWS --password-stdin 520713654638.dkr.ecr.$region.amazonaws.com
+aws ecr get-login-password --region $region | docker login --username AWS --password-stdin 763104351884.dkr.ecr.$region.amazonaws.com
 
 # Build the docker image locally with the image name and then push it to ECR
 # with the full name.
