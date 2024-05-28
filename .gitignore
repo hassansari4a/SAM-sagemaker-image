@@ -1,0 +1,41 @@
+.nfs*
+*.DS_Store 
+
+# compilation and distribution
+__pycache__
+_ext
+*.pyc
+*.pyd
+*.so
+*.dll
+*.egg-info/
+build/
+dist/
+wheels/
+.venv/
+
+# pytorch/python/numpy formats
+*.pth
+*.pkl
+*.npy
+*.ts
+*.pt
+
+# onnx models
+*.onnx
+
+# ipython/jupyter notebooks
+**/.ipynb_checkpoints/
+*.ipynb
+
+# backupfiles
+*.bak
+*.g4dn
+*.inf
+*.inf-neuron
+
+
+# editor settings
+.idea
+.vscode
+_darcs
